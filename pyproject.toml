@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fx-bot"
+version = "0.1.0"
+description = "A modular, paper-first Forex trading bot foundation"
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+mt5 = ["MetaTrader5>=5.0.45; platform_system == 'Windows'"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
